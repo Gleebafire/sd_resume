@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700|Volkhov:400,700);
+
+//Colour Palette
+
+$orange:#fdc20e;
+$blue:#044353;
+$darkgrey:#404040;
+$lightgrey:#e5e5e5;
+$white:#fff;
+$black:#000;
+
+$browserBg: $darkgrey;
+
+$articleBg: $white;
+
+$asideBg: $blue;
+$asideHeaderBar: $white;
+
+$asideHeaderColor: $orange;
+$asideDefaultColor: $white;
+
+$articleHeaderColor: $orange;
+$articleSubColor: $blue;
+$articleDefaultColor: $darkgrey;
+
+
+//Fonts
+
+$fontfamilySerif: 'Volkhov', 'Georgia', 'times-new-roman';
+
+$fontfamilySan: 'Raleway', 'arial', 'san-serif';
+
+$thin: 200;
+$normal: 400;
+$medium: 500;
+$bold: 900;
+
+
+$headingFontaside:$normal 1em/1em $fontfamilySerif;
+$subFontaside: $bold 2em $fontfamilySerif;
+
+$headingFontArticle:$bold 3em $fontfamilySerif;
+$parFontArticle:$normal 1em $fontfamilySan; 
+
+$eHeader: $bold 1.125em $fontfamilySan; 
+$pos: $medium 1em $fontfamilySan;
+$city: $bold 0.875em $fontfamilySan;
+
+$mobileXtraSmall: "(min-width: 320px)";
+$mobileSmall: "(min-width: 480px)";
+$mobileLarge: "(min-width: 600px)";
+$tabletSmall: "(min-width: 840px)" ;
+$tabletLarge: "(min-width: 960px)" ;
+$laptop: "(min-width: 1260px)";
+$desktop: "(min-width: 1024px)";
+

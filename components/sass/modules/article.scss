@@ -1,0 +1,210 @@
+article{
+  background-color:$articleBg;
+  color:$articleDefaultColor;
+
+   @media #{$mobileSmall} {
+    width: 100%;
+    float: none;
+  } //@mediamobileSmall
+
+  @media #{$mobileLarge} {
+    width: 100%;
+    float: none;
+  } //@mediamobileLarge
+
+  @media #{$mobileLarge} {
+    width: 100%;
+    float: none;
+  } //@mediamobileLarge
+
+  @media #{$tabletSmall} {
+    width: 100%;
+    float: none;
+  } //@mediamobileLarge
+
+  @media #{$tabletLarge} {
+    width: 75%;
+    float: right;
+  } //@mediamobileLarge
+
+  @media #{$laptop} {
+    width: 75%;
+    float: right;
+  } //@mediamobileLarge
+
+  .container-fluid{
+    .row{
+      header{
+        padding-top: 20px;
+        hgroup{
+          font-family:$fontfamilySerif; 
+           h1{
+            color:$asideHeaderColor ;
+          } //h1
+          h2{
+            color: $articleSubColor;
+            margin: 15px 0;
+          } //h2
+        } //hgroup
+       p{
+          font-family:$fontfamilySan;
+          padding:15px 0;
+        }
+      }//header
+      h1{
+            color:$asideHeaderColor ;
+            font-family:$fontfamilySerif; 
+          } //h1
+      .image-block{
+        img {
+          width: auto;
+          display: inline-block;
+          margin:15px 15px 15px 0;
+
+          &:nth-child(1) {
+            @media #{$mobileXtraSmall} {
+              width:48%;
+            } //@mediamobileXtraSmall
+
+            @media #{$mobileSmall} {
+              width:47%;
+            } //@mediamobileSmall
+
+            @media #{$mobileLarge} {
+              width:24%;
+            } //@mediamobileLarge
+             
+            @media #{$tabletSmall} {
+              width:21%;
+            } //@mediatabletSmall
+
+            @media #{$tabletLarge} {
+              width:18%;
+            } //@mediatabletLarge 
+
+            @media #{$laptop} {
+              width:18%;
+            } //@medialaptop
+          }//NTH CHILD 1 - Branding
+
+          &:nth-child(2) {
+            @media #{$mobileXtraSmall} {
+              width:58%;
+            } //@mediamobileXtraSmall
+
+            @media #{$mobileSmall} {
+              width:57%;
+            } //@mediamobileSmall
+
+            @media #{$mobileLarge} {
+              width:30%;
+            } //@mediamobileLarge
+             
+            @media #{$tabletSmall} {
+              width:24%;
+            } //@mediatabletSmall
+
+            @media #{$tabletLarge} {
+              width:22%;
+            } //@mediatabletLarge 
+
+            @media #{$laptop} {
+              width:22%;
+            } //@medialaptop
+
+          }//NTH CHILD 2 - Print
+
+          &:nth-child(3) {
+
+            @media #{$mobileXtraSmall} {
+              width:75%;
+            } //@mediamobileXtraSmall
+
+            @media #{$mobileSmall} {
+              width:74%;
+            } //@mediamobileSmall
+
+            @media #{$mobileLarge} {
+              width:36%;
+            } //@mediamobileLarge
+             
+            @media #{$tabletSmall} {
+              width:30%;
+            } //@mediatabletSmall
+
+            @media #{$tabletLarge} {
+              width:28%;
+            } //@mediatabletLarge 
+
+            @media #{$laptop} {
+              width:28%;
+            } //@medialaptop
+          } //NTH CHILD 2 - Web
+        }
+
+      }//Img
+    }//row
+  } //container
+} // article1
+
+.exIcon{
+  width:1%;
+  float: left;
+  margin-right:2%;
+
+  img{
+    margin:3px 5px 0 0;
+  }
+
+}
+
+.exParagraph{
+    width:97%;
+    float:right;
+
+    @media #{$mobileXtraSmall} {
+      width:94%;
+    } //@mediamobileXtraSmall
+
+    @media #{$mobileSmall} {
+      width:97%;
+    } //@mediamobileSmall
+
+    @media #{$mobileLarge} {
+      width:97%;
+    } //@mediamobileLarge
+
+    @media #{$tabletSmall} {
+      width:97%;
+    } //@mediatabletSmall
+
+    @media #{$tabletLarge} {
+      width:97%;
+    } //@mediatabletLarge 
+
+    @media #{$laptop} {
+      width:97%;
+    } //@medialaptop
+
+      p{
+        font-family: $fontfamilySan;
+        color: $darkgrey;
+        margin-bottom: 15px;
+        height: 50%;
+        border: 1px solid red;
+        .eHeader{
+        font:$eHeader;
+        color: $blue;
+        }
+        .Pos{
+        font: $pos;
+        color: $blue;
+        }
+        .city{
+        font: $city;
+        color: $blue;
+        }
+      }
+}
+
+

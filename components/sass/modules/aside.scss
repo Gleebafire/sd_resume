@@ -1,0 +1,72 @@
+aside{
+	background-color: $asideBg;
+	color: $asideDefaultColor;
+
+	 @media #{$mobileSmall} {
+	    width: 100%;
+	    float: none;
+	  } //@mediamobileSmall
+
+	  @media #{$mobileLarge} {
+	    width: 100%;
+	    float: none;
+	  } //@mediamobileLarge
+
+	  @media #{$mobileLarge} {
+	    width: 100%;
+	    float: none;
+	  } //@mediamobileLarge
+
+	  @media #{$tabletSmall} {
+	    width: 100%;
+	    float: none;
+	  } //@mediamobileLarge
+
+	  @media #{$tabletLarge} {
+	    width: 25%;
+	    float: left;
+	  } //@mediamobileLarge
+
+	  @media #{$laptop} {
+	    width: 25%;
+	    float: left;
+	  } //@mediamobileLarge
+
+	  .container-fluid{
+	  	.row{
+	  		header{
+	  			img{
+	  				display: block;
+	  				width: 70%;
+	  				padding: 25px 0; 
+
+  				 	@media #{$mobileXtraSmall} {
+	              		width:48%;
+		            } //@mediamobileXtraSmall
+
+		            @media #{$mobileSmall} {
+		              	width:47%;
+		            } //@mediamobileSmall
+
+		            @media #{$mobileLarge} {
+		              	width:24%;
+		            } //@mediamobileLarge
+		             
+		            @media #{$tabletSmall} {
+		              	width:21%;
+		            } //@mediatabletSmall
+
+		            @media #{$tabletLarge} {
+		              	width:65%;
+		            } //@mediatabletLarge 
+
+		            @media #{$laptop} {
+		            	margin:0 auto;  
+		              	width:70%;
+		            } //@medialaptop	
+	  			}
+	  		}
+	  		
+	  	}
+	  }
+}

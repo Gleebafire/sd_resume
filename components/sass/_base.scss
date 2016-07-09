@@ -1,0 +1,94 @@
+body{
+	background-color: $browserBg;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block;}
+
+
+*{
+ margin:0;
+ padding:0;
+ }
+ 
+.row{
+	margin:0;
+	padding:0;
+}
+
+.wrapper{
+	width:100%;
+	margin: 0 auto;
+
+ 	 @media #{$mobileSmall} {
+	    width: 100%;
+	  } //@mediamobileSmall
+
+	  @media #{$mobileLarge} {
+	    width: 100%;
+	  } //@mediamobileLarge
+
+	  @media #{$mobileLarge} {
+	    width: 100%;
+	  } //@mediamobileLarge
+
+	  @media #{$tabletSmall} {
+	    width: 100%;
+	  } //@mediamobileLarge
+
+	  @media #{$tabletLarge} {
+	    width: 85%;
+	  } //@mediamobileLarge
+
+	  @media #{$laptop} {
+	    width: 85%;
+	  } //@mediamobileLarge
+}
+
+h1{
+	font-size:2em;
+	font-weight:$bold;
+	padding:15px 0;
+
+	@media #{$mobileSmall} {
+		font-size:2em;
+	} //@mediamobileSmall
+
+	@media #{$mobileLarge} {
+		font-size:2em;
+	} //@mediamobileLarge
+	 
+	@media #{$tabletSmall} {
+		font-size:2.5em;
+	} //@mediatabletSmall
+
+	@media #{$tabletLarge} {
+		font-size:2.5em;
+
+	} //@mediatabletLarge	
+
+	@media #{$laptop} {
+		font-size:3em;  
+	} //@medialaptop
+}
+
+h2{
+	font-size: 1.250em;
+	font-weight:$bold;
+}
+
+p{
+	font-size: 1em;
+	line-height:1.2em;
+}
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
