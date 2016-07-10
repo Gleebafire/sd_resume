@@ -147,64 +147,108 @@ article{
   } //container
 } // article1
 
-.exIcon{
-  width:1%;
-  float: left;
-  margin-right:2%;
 
-  img{
-    margin:3px 5px 0 0;
-  }
 
-}
+.exRow{
+  @include clearfix;
+  .exIcon{
+    position: absolute;
+    width:1%;
+    float: left;
+    margin-right:2%;   
 
-.exParagraph{
-    width:97%;
+    img{
+      margin:3px 5px 0 0;
+    }//img
+    .verticalLine{
+      border-left:2px solid $blue;
+      content: "";
+      position: relative;
+      left:9px;
+      top: 5px;
+      opacity: .2;
+
+    }//Vertical Line
+  }//exIcon
+  .exParagraph{
+    width:95%;
     float:right;
 
     @media #{$mobileXtraSmall} {
-      width:94%;
+      width:90%;
     } //@mediamobileXtraSmall
 
     @media #{$mobileSmall} {
-      width:97%;
+      width:93%;
     } //@mediamobileSmall
 
     @media #{$mobileLarge} {
-      width:97%;
+      width:93%;
     } //@mediamobileLarge
 
     @media #{$tabletSmall} {
-      width:97%;
+      width:93%;
     } //@mediatabletSmall
 
     @media #{$tabletLarge} {
-      width:97%;
+      width:93%;
     } //@mediatabletLarge 
 
     @media #{$laptop} {
-      width:97%;
+      width:95%;
     } //@medialaptop
 
-      p{
-        font-family: $fontfamilySan;
-        color: $darkgrey;
-        margin-bottom: 15px;
-        height: 50%;
-        border: 1px solid red;
-        .eHeader{
+    p{
+      font-family: $fontfamilySan;
+      color: $darkgrey;
+      margin-bottom: 15px;
+      line-height: 1.4em;
+
+      .eHeader{
         font:$eHeader;
         color: $blue;
-        }
-        .Pos{
+      } //eHeader
+      .pos{
         font: $pos;
         color: $blue;
-        }
-        .city{
+      } //pos
+      .city{
         font: $city;
         color: $blue;
-        }
-      }
+      } //city
+    }
+  }//exParagraph
+}//exRow
+
+
+.fbLine{
+  height: 55px;
+
+    @media #{$mobileXtraSmall} {
+      height: 180px;
+    } //@mediamobileXtraSmall
+
+    @media #{$mobileSmall} {
+      height: 178px;
+    } //@mediamobileSmall
+
+    @media #{$mobileLarge} {
+      height: 55px;
+    } //@mediamobileLarge
+
+    @media #{$tabletSmall} {
+      height: 55px;
+    } //@mediatabletSmall
+
+    @media #{$tabletLarge} {
+      height: 55px;
+    } //@mediatabletLarge 
+
+    @media #{$laptop} {
+      height: 55px;
+    } //@medialaptop  
 }
+
+
 
 
