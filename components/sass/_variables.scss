@@ -46,11 +46,12 @@ $eHeader: $bold 1.125em $fontfamilySan;
 $pos: $medium 1em $fontfamilySan;
 $city: $bold 0.875em $fontfamilySan;
 
+$mobileXXtraSmall: "(min-width: 220px)";
 $mobileXtraSmall: "(min-width: 320px)";
 $mobileSmall: "(min-width: 480px)";
 $mobileLarge: "(min-width: 600px)";
 $tabletSmall: "(min-width: 840px)" ;
 $tabletLarge: "(min-width: 960px)" ;
-$laptop: "(min-width: 1260px)";
-$desktop: "(min-width: 1024px)";
+$laptop: "(min-width: 1024px)";
+$desktop: "(min-width: 1260px)";
 

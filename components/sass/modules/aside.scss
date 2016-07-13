@@ -12,61 +12,196 @@ aside{
 	    float: none;
 	  } //@mediamobileLarge
 
-	  @media #{$mobileLarge} {
-	    width: 100%;
-	    float: none;
-	  } //@mediamobileLarge
-
 	  @media #{$tabletSmall} {
 	    width: 100%;
 	    float: none;
-	  } //@mediamobileLarge
+	  } //@mediatabletSmall
 
 	  @media #{$tabletLarge} {
-	    width: 25%;
+	    width: 33%;
 	    float: left;
-	  } //@mediamobileLarge
+	  } //@mediatabletLarge
 
 	  @media #{$laptop} {
-	    width: 25%;
+	    width: 30%;
 	    float: left;
-	  } //@mediamobileLarge
+	  } //@medialaptop
 
-	  .container-fluid{
-	  	.row{
-	  		header{
-	  			img{
-	  				display: block;
-	  				width: 70%;
-	  				padding: 25px 0; 
+		.container-fluid{
+			.row{
+				header{
+					img{
+					display: block;
+					width: 70%;
+					padding: 25px 0; 
+					margin:0 auto; 
 
-  				 	@media #{$mobileXtraSmall} {
-	              		width:48%;
-		            } //@mediamobileXtraSmall
+						@media #{$mobileXtraSmall} { 
+							width:48%;
+						} //@mediamobileXtraSmall
 
-		            @media #{$mobileSmall} {
-		              	width:47%;
-		            } //@mediamobileSmall
+						@media #{$mobileSmall} {
+							width:47%;
+						} //@mediamobileSmall
 
-		            @media #{$mobileLarge} {
-		              	width:24%;
-		            } //@mediamobileLarge
-		             
-		            @media #{$tabletSmall} {
-		              	width:21%;
-		            } //@mediatabletSmall
+						@media #{$mobileLarge} {
+							width:24%;
+						} //@mediamobileLarge
 
-		            @media #{$tabletLarge} {
-		              	width:65%;
-		            } //@mediatabletLarge 
+						@media #{$tabletSmall} {
+							width:21%;
+						} //@mediatabletSmall
 
-		            @media #{$laptop} {
-		            	margin:0 auto;  
-		              	width:70%;
-		            } //@medialaptop	
-	  			}
-	  		}
-	  		
-	  	}
-	  }
+						@media #{$tabletLarge} {
+							width:72%;
+						} //@mediatabletLarge 
+
+						@media #{$laptop} { 
+							width:70%;
+						} //@medialaptop					
+					}//img
+				}//header
+			}//row
+		}//container
+		.jobTitle{
+			background-color:white;
+			width: 100%;
+			height: 50px;
+			p{
+				text-align: center;
+				color: $orange;
+				line-height: 50px;
+				font-weight: $bold;
+				font-size: 1.35em;
+
+				img{
+					width: 17px;
+					height: 17px;
+					display: inline-block;
+				}	//pencil icon
+			}
+		} //jobTitle
+		.myDetails{
+			margin: 30px 5px 30px 0;
+			float: right;
+
+			.item{
+				text-align: right;
+				margin-left:15px;
+				width: 210px;
+				height: 80px;
+
+
+				@media #{$mobileXtraSmall} {
+					border: 1px solid green;
+					float: right;
+					margin:30px 25% 0 10px;
+				} //@mediamobileSmall
+
+				@media #{$mobileSmall} {
+					border: 1px solid red;
+					float: left;
+				} //@mediamobileSmall
+
+				@media #{$mobileLarge} {
+					border: 1px solid #ffe400;
+					float: left;
+				} //@mediamobileLarge
+
+				@media #{$tabletSmall} {
+					border: 1px solid tan;
+					float: left;
+				} //@mediatabletSmall
+
+				@media #{$tabletLarge} {
+					margin-top: 25px;
+					float: right;
+				} //@mediatabletLarge
+
+				@media #{$laptop} {
+					margin-top: 25px;
+					float: none;
+				} //@medialaptop
+
+				h2{
+					margin-left: 40px;
+					color: $orange;
+					img{
+						display: inline-block;
+						margin-right:35px;
+					}
+				}
+				p{
+					margin-top: 15px;
+					font-family: $fontfamilySan;
+					a{
+						text-decoration: none;
+						color: $asideDefaultColor;
+					}
+					i{
+						font-weight: $bold;
+					}
+				}
+				p.interests{
+					text-transform: uppercase;
+				}
+			}
+		} //my Details
+		div{
+			@include clearfix;
+		}
+} //aside
+
+
+
+.moveIco{
+	position: relative;
+	top: 2px;
 }
+
+.emailIco,
+.addressIco,
+.portfolioIco,
+.linkdenIco,
+.languageIco,
+.interestsIco{
+	position: relative;
+}
+
+.emailIco{
+	top: 2px;
+}
+
+.addressIco{
+	left:18px;
+	top:1px;
+}
+
+.portfolioIco{
+	top: 3px;
+	left:23px;
+}
+
+.linkdenIco{
+	left:20px;
+	top: 2px;
+}
+
+.languageIco{
+	left:28px;
+	top: 3px;
+}
+
+.interestsIco{
+	left:10px;
+	top: 3px;
+}
+
+.interest-bold{
+font-weight:$bold;
+}
+
+.interest-thin{
+font-weight:$thin;
+}
+

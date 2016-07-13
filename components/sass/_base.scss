@@ -40,7 +40,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 	  } //@mediamobileLarge
 
 	  @media #{$laptop} {
-	    width: 85%;
+	    width: 75%;
 	  } //@mediamobileLarge
 }
 
@@ -75,6 +75,7 @@ h2{
 	font-size: 1.250em;
 	font-weight:$bold;
 }
+
 
 p{
 	font-size: 1em;
