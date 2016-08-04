@@ -1,31 +1,42 @@
-body{
-	background-color: $browserBg;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block;}
-
-
 *{
  margin:0;
  padding:0;
  }
- 
+
+
+ *:focus {
+    outline: 0;
+}
+
+html { height:100%; }
+
+body{
+	background-color: $browserBg;
+	height:100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block;}
+
 .row{
 	margin:0;
 	padding:0;
+}
+
+a{
+	color: $white;
+	text-decoration: none;
 }
 
 .wrapper{
 	width:100%;
 	margin: 0 auto;
 
+	@media #{$mobileXtraSmall} {
+	 } //@mediamobileXtraSmall
+
  	 @media #{$mobileSmall} {
 	    width: 100%;
 	  } //@mediamobileSmall
-
-	  @media #{$mobileLarge} {
-	    width: 100%;
-	  } //@mediamobileLarge
 
 	  @media #{$mobileLarge} {
 	    width: 100%;
@@ -40,7 +51,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 	  } //@mediamobileLarge
 
 	  @media #{$laptop} {
-	    width: 75%;
+	    width: 77%;
 	  } //@mediamobileLarge
 }
 

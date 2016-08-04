@@ -4,7 +4,19 @@
   <meta charset="UTF-8">
   <title>Shaun Dewar Resume</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/script">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+        $('.myDetailsHoriz').toggle();
+    });
+  });
+</script>
+
+
 </head>
 <body>
     <div class="wrapper">
@@ -19,45 +31,155 @@
         <div class="jobTitle">
           <p>Web<img src="images/pencil.svg">Print Designer</p> 
         </div>
-        <div class="myDetails">
-            <div class="item">
-              <h2><img src="images/phone.svg" width="20px" height="20px">Phone</h2>
-              <p> (+1) 919 813 8703<br>
-                  (+1) 919 908 7467</p>
-            </div>
-            <div class="item">
+        
+        <div align="center">
+          <button type="button" class="expandButton">
+            <img src="images/down-arrow.svg">
+            <p>View Details</p>
+          </button>
+        </div>
+        
+
+        <div align="right" class="myDetailsVertical">
+        	<ul>
+        		<li>
+              <h2><img class="phoneIco" src="images/phone.svg" width="20px" height="20px">Phone</h2>
+              <p> (+1) 919 813 8703<br>(+1) 919 908 7467</p>
+            </li>
+        		<li>
               <h2><img class="emailIco" src="images/email.svg" width="20px" height="20px">Email</h2>
               <p><a href="mailto:shaun.dewar@gmail.com">shaun.dewar@gmail.com</a></p>
-            </div>
-            <div class="item">
-              <h2><img class="addressIco" src="images/address.svg" width="20px" height="20px">Address</h2>
-              <p> 2210 Pike Street<br>
-                  Durham NC, 27707, USA</p>
-            </div>
-            <div class="item">
+            </li>
+        		<li>
+               <h2><img class="addressIco" src="images/address.svg" width="20px" height="20px">Address</h2>
+               <p>2210 Pike Street<br>Durham NC, 27707, USA</p>
+            </li>
+        		<li>
               <h2><img class="portfolioIco" src="images/behance.svg" width="20px" height="20px">Portfolio</h2>
               <p><a href="www.behance.net/Gleebafire">www.behance.net/Gleebafire</a></p>
-            </div>
-            <div class="item">
-              <h2><img class="linkdenIco" src="images/linkden.svg" width="20px" height="20px">Linkden</h2>
-              <p><a href="www.linkedin.com/in/shaun-dewar-03b5626a">www.linkedin.com/in/shaun-dewar-03b5626a</a></p>
-            </div>
-            <div class="item">
+            </li>
+        		<li>              
+              <h2><img class="linkdenIco" src="images/linkden.svg" width="20px" height="20px">Linkdin</h2>
+              <p><a href="https://www.linkedin.com/in/shaundewar82">www.linkedin.com/in/<br>shaundewar82</a></p>
+            </li>
+        		<li>
               <h2><img class="languageIco" src="images/language.svg" width="20px" height="20px">Language</h2>
-              <p><i>English</i><br>
-                Afrikaans</p>
-            </div>
-            <div class="item">
-              <h2><img class="interestsIco" src="images/interests.svg" width="20px" height="20px">Interest</h2>
+              <p><i>English</i><br>Afrikaans</p>
+            </li>
+        		<li>
+                <h2><img class="interestsIco" src="images/interests.svg" width="20px" height="20px">Interest</h2>
                 <p>
                   <span class="interest-bold"> DESIGN </span><span class="interest-thin"> WEB </span><span class="interest-bold">ILLUSTRATION </span><br>
                   <span class="interest-thin"> ANIMATION </span><span class="interest-bold"> TECHNOLOGY </span><br>
                   <span class="interest-thin"> GAMING </span><span class="interest-bold"> WRITING </span><span class="interest-thin">BOOKS </span><br>
                   <span class="interest-bold"> COMICS </span><span class="interest-thin"> LEARNING </span>
                 </p>
+            </li>
+            <li class="pc-skills-vertical">
+              <h2><img class="pcskillsIco" src="images/pc_skills.svg" width="20px" height="20px">Pc Skills</h2>
+               <ul>
+                 <li><img src="images/photoshop.svg" width="45px" height="45px"></li>
+                 <li><img src="images/illustrator.svg" width="45px" height="45px"></li>
+                 <li><img src="images/indesign.svg" width="45px" height="45px"></li>
+                 <li class="no-margin"><img src="images/dreamweaver.svg" width="45px" height="45px"></li>
+
+                 <br>
+
+                 <li><img src="images/flash.svg" width="45px" height="45px"></li>
+                 <li><img src="images/html.svg" width="45px" height="45px"></li>
+                 <li><img src="images/css.svg" width="45px" height="45px"></li>
+                 <li class="no-margin"><img src="images/sass.svg" width="45px" height="45px"></li>
+
+                 <br>
+
+                 <li><img src="images/jquery.svg" width="45px" height="45px"></li>
+                 <li><img src="images/javascript.svg" width="45px" height="45px"></li>
+                 <li><img src="images/bootstrap.svg" width="45px" height="45px"></li>
+                 <li class="no-margin"><img src="images/wordpress.svg" width="45px" height="45px"></li>
+
+                 <br>
+
+                 <li><img src="images/git.svg" width="45px" height="45px"></li>
+                 <li><img src="images/office.svg" width="45px" height="45px"></li>
+                 <li><img src="images/windows.svg" width="45px" height="45px"></li>
+                 <li class="no-margin"><img src="images/apple.svg" width="45px" height="45px"></li>
+               </ul>
+            </li>
+        	</ul>
+        </div>
+        
+
+        <div align="center" class="myDetailsHoriz">
+          <ul>
+            <li>
+            <img class="phoneIco" src="images/phone.svg" width="20px" height="20px">
+            <h2>Phone</h2>
+            <p> (+1) 919 813 8703<br>(+1) 919 908 7467</p>
+            </li>
+            <li>
+            <img src="images/email.svg" width="20px" height="20px">
+            <h2>Email</h2>
+            <p><a href="mailto:shaun.dewar@gmail.com">shaun.dewar@gmail.com</a></p>
+            <p class="remove">Remove</p>
+            </li>
+            <li>
+              <img src="images/address.svg" width="20px" height="20px">
+              <h2>Address</h2>
+              <p>2210 Pike Street<br>Durham NC, 27707, USA</p>
+            </li>
+            <li>
+              <img src="images/behance.svg" width="20px" height="20px">
+              <h2>Portfolio</h2>
+              <p><a href="www.behance.net/Gleebafire">www.behance.net/Gleebafire</a></p>
+              <p class="remove">Remove</p> 
+            </li>
+            <li>
+              <img src="images/linkden.svg" width="20px" height="20px">
+              <h2>Linkdin</h2>
+              <p><a href="https://www.linkedin.com/in/shaundewar82">www.linkedin.com/in/<br>shaundewar82</a></p>
+            </li>
+            <li>
+              <img src="images/language.svg" width="20px" height="20px">
+              <h2>Language</h2>
+              <p><i>English</i><br>Afrikaans</p>
+            </li>
+            <li>
+                <img src="images/interests.svg" width="20px" height="20px">
+                <h2>Interest</h2>
+                <p>
+                  <span class="interest-bold"> DESIGN </span><span class="interest-thin"> WEB </span><span class="interest-bold">ILLUSTRATION </span><br>
+                  <span class="interest-thin"> ANIMATION </span><span class="interest-bold"> TECHNOLOGY </span><br>
+                  <span class="interest-thin"> GAMING </span><span class="interest-bold"> WRITING </span><span class="interest-thin">BOOKS </span><br>
+                  <span class="interest-bold"> COMICS </span><span class="interest-thin"> LEARNING </span>
+                </p>
+            </li>
+            <br>
+          </ul>
+          <div class="pc-skills-horizontal">
+               <img src="images/pc_skills.svg" width="20px" height="20px">
+               <h2>Pc Skills</h2>
+              <ul>
+                 <li><img src="images/photoshop.svg" width="45px" height="45px"></li>
+                 <li><img src="images/illustrator.svg" width="45px" height="45px"></li>
+                 <li><img src="images/indesign.svg" width="45px" height="45px"></li>
+                 <li class="no-margin"><img src="images/dreamweaver.svg" width="45px" height="45px"></li>
+                 <li><img src="images/flash.svg" width="45px" height="45px"></li>
+                 <li><img src="images/html.svg" width="45px" height="45px"></li>
+                 <li><img src="images/css.svg" width="45px" height="45px"></li>
+                 <li class="no-margin"><img src="images/sass.svg" width="45px" height="45px"></li>
+                 <br>
+                 <li><img src="images/jquery.svg" width="45px" height="45px"></li>
+                 <li><img src="images/javascript.svg" width="45px" height="45px"></li>
+                 <li><img src="images/bootstrap.svg" width="45px" height="45px"></li>
+                 <li class="no-margin"><img src="images/wordpress.svg" width="45px" height="45px"></li>
+                 <li><img src="images/git.svg" width="45px" height="45px"></li>
+                 <li><img src="images/office.svg" width="45px" height="45px"></li>
+                 <li><img src="images/windows.svg" width="45px" height="45px"></li>
+                 <li class="no-margin"><img src="images/apple.svg" width="45px" height="45px"></li>
+               </ul>
             </div>
         </div>
-        <div></div>
+        <div class="clearFix"></div>
     </aside>
 
     <article>
@@ -188,6 +310,6 @@
         </div>
     </article>
     </div>
-  <script src="js/script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
